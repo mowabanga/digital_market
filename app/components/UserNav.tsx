@@ -44,7 +44,9 @@ const UserNav = ({ email, name, userImage }: iAppProps) => {
           <DropdownMenuItem asChild>
             <Link href="/sell">Sell your product</Link>
           </DropdownMenuItem>
-          <DropdownMenuItem>Test Items</DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="/settings">Settings</Link>
+          </DropdownMenuItem>
           <DropdownMenuItem>Test Items</DropdownMenuItem>
           <DropdownMenuItem>Test Items</DropdownMenuItem>
         </DropdownMenuGroup>

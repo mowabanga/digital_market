@@ -174,7 +174,10 @@ const SellRoute = (props: Props) => {
             </div>
           </CardContent>
           <CardFooter className="mt-5">
-            <SubmitButton />
+            <SubmitButton
+              title="Create your product"
+              status="Uploading product"
+            />
           </CardFooter>
         </form>
       </Card>

@@ -4,19 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { useFormStatus } from "react-dom";
 
-type Props = {};
-
-const SubmitButton = (props: Props) => {
+const SubmitButton = ({ title, status }: { title: string; status: string }) => {
   const { pending } = useFormStatus();
   return (
     <>
       {pending ? (
         <Button disabled>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-          Uploading
+          {status}
         </Button>
       ) : (
-        <Button type="submit">Create Your Product</Button>
+        <Button type="submit">{title}</Button>
       )}
     </>
   );
